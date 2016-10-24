@@ -29,7 +29,7 @@ powerCon <- subset(rawData2,grepl("^2007-02-0[12]",as.character(datetime)))
 with(powerCon,plot(datetime,submetering1,type="l",xlab="",ylab="Energy sub meetering",col="black"))
 with(powerCon,lines(datetime,submetering2,type="l",col="red"))
 with(powerCon,lines(datetime,submetering3,type="l",col="blue"))
-legend("topright", lty=1, col = c("black", "blue", "red"), legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+legend("topright", lty=1, col = c("black", "red", "blue"), legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 
 # copy to graphic device png
 dev.copy(png,"plot3.png")

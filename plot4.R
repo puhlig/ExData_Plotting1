@@ -37,7 +37,7 @@ with(powerCon, {
       plot(datetime,submetering1,type="l", cex.lab=0.75, xlab="",ylab="Energy sub meetering",col="black")
       lines(datetime,submetering2,type="l",col="red")
       lines(datetime,submetering3,type="l",col="blue")
-      legend("topright", cex=0.7, bty="n", lty=1, col = c("black", "blue", "red"), legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+      legend("topright", cex=0.7, bty="n", lty=1, col = c("black", "red", "blue"), legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
       
       # (1,2)-graph
       # plot voltage vs datetime
